@@ -4,9 +4,15 @@ class Solution {
         int totalSum = (n*(n+1))/2;
         int total = 0;
         
-       for(int num : nums){
+      /*
+      for(int num : nums){
            total = total + num;
        }
-       return totalSum  - total;
+       */
+        
+        for(int i =0; i<n; i++){
+            total += nums[i];
+        }
+         return totalSum  - total;
     }
 }
